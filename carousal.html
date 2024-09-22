@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousal Effect</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .container-img{
+            width: 65vw;
+            height: 60vh;
+            border-radius: 1rem;
+            background-image: url(./723647.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            animation: gallery 20s linear infinite;
+        }
+
+        @keyframes gallery {
+            0%{
+                background-image: url(./403029.jpg);
+            }
+            20%{
+                background-image: url(./403041.jpg);
+            }
+            40%{
+                background-image: url(./654565.jpg);
+            }
+            60%{
+                background-image: url(./670773.jpg);
+            }
+            80%{
+                background-image: url(./723636.jpg);
+            }
+            100%{
+                background-image: url(./Taki\ and\ Mitsuha\ \(Your\ Name\).jpg);
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container-img"></div>
+</body>
+</html>

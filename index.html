@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousal</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        background-color: #f0f0f0;
+      }
+
+      .container-img {
+        width: 70vw;
+        height: 60rem;
+        background-image: url("./images/img1.jpg");
+        box-shadow: rgba(110, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 1rem;
+        animation: gallery 20s linear infinite;
+        background-size: 100% 100%;
+      }
+
+      @keyframes gallery {
+        0% {
+          background-image: url("./images/img2.jpg");
+        }
+        20% {
+          background-image: url("./images/img3.jpg");
+        }
+        40% {
+          background-image: url("./images/img4.jpg");
+        }
+        60% {
+          background-image: url("./images/img5.jpg");
+        }
+        80% {
+          background-image: url("./images/img6.jpg");
+        }
+        100% {
+          background-image: url("./images/img7.jpg");
+        }
+      }
+
+      /*? media queries */
+      @media (width <= 1300px) {
+        .container-img {
+          width: 60vw;
+          height: 50rem;
+          box-shadow: rgba(110, 100, 111, 0.2) 0px 7px 29px 0px;
+          border-radius: 1rem;
+          animation: gallery 20s linear infinite;
+          background-size: 100% 100%;
+        }
+      }
+     
+      @media (width <= 1200px ) {
+        .container-img {
+          width: 55vw;
+          height: 50rem;
+          box-shadow: rgba(110, 100, 111, 0.2) 0px 7px 29px 0px;
+          border-radius: 1rem;
+          animation: gallery 20s linear infinite;
+          background-size: 100% 100%;
+        }
+      }
+
+      @media (width <= 1100px ) {
+        .container-img {
+          width: 50vw;
+          height: 50rem;
+          box-shadow: rgba(110, 100, 111, 0.2) 0px 7px 29px 0px;
+          border-radius: 1rem;
+          animation: gallery 20s linear infinite;
+          background-size: 100% 100%;
+        }
+      }
+
+      @media (width <= 768px ) {
+        .container-img {
+          width: 80vw;
+          height: 60rem;
+          box-shadow: rgba(110, 100, 111, 0.2) 0px 7px 29px 0px;
+          border-radius: 1rem;
+          animation: gallery 20s linear infinite;
+          background-size: 100% 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-img"></div>
+  </body>
+</html>
